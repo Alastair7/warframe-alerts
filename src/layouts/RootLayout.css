@@ -1,0 +1,17 @@
+header {
+	padding: 1rem;
+}
+
+.header__title {
+	font-size: clamp(4rem, 5vw, 15rem);
+	text-align: center;
+	padding: 0.5rem;
+	color: #FFFFFF;
+}
+
+.header_subtitle {
+	font-size: clamp(2.5rem, 2.5vw, 10rem);
+	text-align: center;
+	font-size: 2.5rem;
+	color: #D4CB6A;
+}

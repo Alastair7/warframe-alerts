@@ -1,14 +1,14 @@
 #root {
 	min-height: 100svh;
-}
+	--bg-color-dark: #0D1B29;
 
-body {
-	margin: 0;
+	background-color: var(--bg-color-dark);
 }
 
 *,
 *::before,
 *::after {
-
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }

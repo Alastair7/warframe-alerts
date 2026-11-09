@@ -1,11 +1,16 @@
 import { type ReactNode } from "react"
+import "./RootLayout.css"
 
-interface HomeLayoutProps {
+interface RootLayoutProps {
   children: ReactNode
 }
 
-export function RootLayout({ children }: HomeLayoutProps) {
+export function RootLayout({ children }: RootLayoutProps) {
   return <>
+    <header>
+      <h1 className="header__title">Warframe</h1>
+      <h2 className="header_subtitle">Alerts</h2>
+    </header>
     {children}
   </>
 }
