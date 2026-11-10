@@ -7,7 +7,7 @@ export const api = {
       ...init,
       headers: {
         'Content-Type': 'application/json',
-        ...init.headers
+        ...init?.headers
       },
     });
 
