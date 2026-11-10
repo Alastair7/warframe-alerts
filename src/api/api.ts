@@ -1,20 +1,14 @@
-class WarframeStatusAPI {
-  private readonly baseURL: URL = new URL("https://api.warframestat.us");
+import type { Alert } from "../domain/alert";
+import { api } from "../lib/apiClient";
 
-  private async get<T>(path: string): Promise<T> {
-    const endpoint = `${this.baseURL}${path}`
+export async function checkhealth(): Promise<number> {
+  type HeartbeatOutput = { message: string, code: number }
 
-    const response = await fetch(endpoint)
+  const response = await api.get<HeartbeatOutput>('/heartbeat');
 
-    if (!response.ok) {
-      throw new Error("Something went wrong with the API")
-    }
+  return response.code
+}
 
-    return response.json() as Promise<T>
-
-  }
-
-  checkhealth() {
-    return this.get("/heartbeat")
-  }
+export async function fetchAlerts(): Promise<Alert[]> {
+  return await api.get<Alert[]>('/pc/alerts')
 }
