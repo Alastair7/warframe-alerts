@@ -1,3 +1,4 @@
+import { AlertTable } from "../components/AlertTable";
 
 export function HomePage() {
   //  const { data: alerts, isPending } = useQuery(alertListOptions())
@@ -5,5 +6,6 @@ export function HomePage() {
 
   return <>
     <h1>Hello Tenno!</h1>
+    <AlertTable />
   </>
 }
