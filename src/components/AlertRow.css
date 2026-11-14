@@ -1,0 +1,7 @@
+.alert__row {
+	display: flex;
+
+	color: white;
+	background-color: #D2D2D2;
+	border-radius: 12px;
+}

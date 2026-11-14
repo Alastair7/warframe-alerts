@@ -1,0 +1,45 @@
+.mission {
+	display: flex;
+	padding: 0.5rem;
+}
+
+
+.mission__details {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.mission__description {
+	color: #473D36;
+	font-size: 1.3em;
+}
+
+.mission__rewards {
+	font-size: 1em;
+	color: #51785C;
+}
+
+.mission__location {
+	color: #B2815E;
+}
+
+.mission__credits {
+	color: #000000;
+	font-size: 1rem;
+}
+
+.mission__expiry {
+	color: #000000;
+}
+
+.mission__faction {
+	max-width: 100%;
+	height: auto;
+}
+
+.faction__wrapper {
+	max-width: 20%;
+	border: 2px solid #6E6E6E;
+	margin-right: 1rem;
+}
